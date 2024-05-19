@@ -33,8 +33,6 @@ public class DisciplineFactory implements DisciplineFactoryInterface {
             logger.info("Создана дополнительная дисциплина");
             return new OptionalDiscipline();
         }
-        throw new IllegalArgumentException(STR."На вход получено: \{type}");
+        throw new IllegalArgumentException("На вход получено: " + type);
     }
-
-
 }

@@ -60,19 +60,19 @@ public class OptionalDiscipline implements DisciplineInterface {
         try {
             logger.fine("Получение названия дополнительной дисциплины по номеру: " + number);
             Set<String> setKeys = this.names.keySet();
-            String a = "Дополнительные дисциплины: \n\t";
+            StringBuilder a = new StringBuilder("Дополнительные дисциплины: \n\t");
             int i = 1;
             for (String k : setKeys) {
                 if (number == i) {
                     return k;
                 }
-                a = STR."\{a}\{i}. \{k}\n\t";
+                a.append(i).append(". ").append(k).append("\n\t");
                 i += 1;
             }
-            return a;
+            return a.toString();
         } catch (Exception e) {
             logger.severe("Ошибка при получении названия обязательной дисциплины по номеру: " + e.getMessage());
-            return "Ошибка при получении названия обязательной дисциплины по номер";
+            return "Ошибка при получении названия обязательной дисциплины по номеру";
         }
     }
 

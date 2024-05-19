@@ -263,7 +263,7 @@ public class Menu {
                             break;
                         }
 
-                        String filePath = "src\\main\\java\\org\\example\\users" + File.separator + name + ".xml";
+                        String filePath = "resources\\users" + File.separator + name + ".xml";
                         File xmlFile = new File(filePath);
 
                         if (xmlFile.exists()) {

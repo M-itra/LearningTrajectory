@@ -76,7 +76,7 @@ public class MandatoryDisciplineProxy implements DisciplineInterface {
             DOMSource source = new DOMSource(doc);
 
             // Установка пути к папке "users"
-            String usersFolderPath = "src\\main\\java\\org\\example\\users";
+            String usersFolderPath = "resources\\users";
             String fileName = mandatoryDiscipline.getPath();
             String filePath = usersFolderPath + File.separator + fileName;
 

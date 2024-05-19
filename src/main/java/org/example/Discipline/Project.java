@@ -18,7 +18,7 @@ public class Project implements ProjectInterface {
         Set<String> setKeys = this.name.keySet();
         StringBuilder a = new StringBuilder("Дисциплины: \n");
         for (String k : setKeys) {
-            a = new StringBuilder(STR."\{a}\{k}\n");
+            a.append(k).append("\n");
         }
         if (a.toString().equals("Дисциплины: \n")) {
             return null;

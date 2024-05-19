@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 
 public class DisciplinesHandler {
 
-    private static final String XML_FILE_PATH = "src\\main\\java\\org\\example\\disciplines.xml";
+    private static final String XML_FILE_PATH = "resources\\disciplines.xml";
     private static final Logger logger = Logger.getLogger(DisciplinesHandler.class.getName());
     static {
         logger.setLevel(Level.OFF);

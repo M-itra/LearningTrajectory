@@ -22,8 +22,6 @@ import java.util.logging.Logger;
 public class OptionalDisciplineProxy implements DisciplineInterface {
     private static final Logger logger = Logger.getLogger(OptionalDisciplineProxy.class.getName());
 
-
-
     private final DisciplineInterface optionalDiscipline;
 
     public OptionalDisciplineProxy(DisciplineInterface optionalDiscipline) {
@@ -60,7 +58,7 @@ public class OptionalDisciplineProxy implements DisciplineInterface {
             // Проверяем, существует ли уже файл
 
             // Путь к файлу "User.xml"
-            String filePath = "src\\main\\java\\org\\example\\users" + File.separator + optionalDiscipline.getPath();
+            String filePath = "resources\\users" + File.separator + optionalDiscipline.getPath();
             File file = new File(filePath);
 
             if (file.exists()) {
